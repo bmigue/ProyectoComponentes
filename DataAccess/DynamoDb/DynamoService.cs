@@ -16,7 +16,6 @@ namespace CloudPatterns.AWS.DynamoDb
 
             DbContext = new DynamoDBContext(DynamoClient, new DynamoDBContextConfig
             {
-                //Setting the Consistent property to true ensures that you'll always get the latest 
                 ConsistentRead = true,
                 SkipVersionCheck = true
             });
